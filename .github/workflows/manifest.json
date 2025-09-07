@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "updated_at": "2025-09-07T22:47:14",
+  "title": "Mundo Vivo",
+  "description": "Índice de shards da memória oficial",
+  "shards": [
+    {
+      "type": "characters",
+      "file": "shards/characters_0001.jsonl"
+    },
+    {
+      "type": "locations",
+      "file": "shards/locations_0001.jsonl"
+    },
+    {
+      "type": "items",
+      "file": "shards/items_0001.jsonl"
+    },
+    {
+      "type": "events",
+      "file": "shards/events_2025_09.jsonl"
+    }
+  ]
+}

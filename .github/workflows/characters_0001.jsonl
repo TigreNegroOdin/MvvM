@@ -1,0 +1,2 @@
+{"id": "odin", "name": "Odin", "role": "guardião", "skills": ["vigília", "tática"], "inventory": ["lanterna", "rádio"], "status": "ativo"}
+{"id": "tigre", "name": "Tigre", "role": "combatente", "skills": ["estratégia", "combate"], "inventory": ["glock"], "status": "ativo"}
