@@ -1,0 +1,2 @@
+{"id": "odin", "name": "Odin", "role": "guardião", "skills": ["vigília", "tática"], "inventory": ["lanterna", "rádio"], "status": "ativo"}
+{"id": "carol", "name": "Carol", "role": "exploradora", "skills": ["negociação", "sobrevivência"], "inventory": ["mochila", "mapa"], "status": "ativo"}
