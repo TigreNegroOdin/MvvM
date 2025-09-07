@@ -1,0 +1,22 @@
+name: Mundo Vivo - Sync
+
+on:
+  push:
+    paths:
+      - 'World.json'
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v3
+
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Rodar script do mundo
+        run: python load_world.py
