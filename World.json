@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "updated_at": "2025-09-07T17:00:00-03:00",
+  "meta": {
+    "title": "Mundo Vivo",
+    "description": "Memória âncora do mundo"
+  },
+  "rules": [
+    "Sem retcon: o que está aqui é canônico",
+    "Eventos sempre têm data e local"
+  ],
+  "locations": [
+    {"id": "mercado", "name": "Mercado Central", "coords": [-8.05, -34.9], "notes": "Ponto de encontro"}
+  ],
+  "characters": [
+    {"id": "odin", "name": "Odin", "role": "guardião", "skills": ["vigília","tática"], "inventory": ["lanterna","rádio"], "status": "ativo"}
+  ],
+  "items": [
+    {"id": "espada_nano", "name": "Espada Nano", "effect": "corte extremo"}
+  ],
+  "events": [
+    {
+      "id": "evt-0001",
+      "when": "2025-09-07T16:30:00-03:00",
+      "where": "mercado",
+      "actors": ["odin"],
+      "summary": "Patrulha de rotina no Mercado Central",
+      "log": "Sem incidentes."
+    }
+  ]
+}
