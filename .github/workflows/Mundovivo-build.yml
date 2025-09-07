@@ -1,0 +1,37 @@
+name: Mundo Vivo - Build
+
+on:
+  push:
+    paths:
+      - 'manifest.json'
+      - 'shards/**.jsonl'
+      - 'validator.py'
+      - 'reconciler.py'
+      - 'build_world.py'
+
+jobs:
+  validate-reconcile-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate
+        run: python validator.py
+
+      - name: Reconcile
+        run: python reconciler.py
+
+      - name: Build consolidated world
+        run: python build_world.py
+
+      - name: Upload artifact (world_master.json)
+        uses: actions/upload-artifact@v4
+        with:
+          name: world_master
+          path: world_master.json
